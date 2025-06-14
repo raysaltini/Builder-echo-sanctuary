@@ -108,15 +108,6 @@ const Index = () => {
               intelligence to create exceptional customer experiences and drive
               sustainable growth.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-jakala-green hover:bg-jakala-green-light text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center">
-                Explore Our Services
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </button>
-              <button className="border-2 border-jakala-navy text-jakala-navy hover:bg-jakala-navy hover:text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-200">
-                Watch Demo
-              </button>
-            </div>
           </div>
         </div>
       </section>
