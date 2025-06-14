@@ -18,16 +18,16 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-jakala-white">
       {/* Navigation */}
-      <nav className="relative bg-jakala-white border-b border-jakala-gray-100">
+      <nav className="relative bg-jakala-white border-b border-jakala-gray-200">
         <div className="container">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
               <div className="flex items-center">
-                <div className="text-2xl font-bold text-jakala-navy tracking-tight">
+                <div className="text-2xl font-bold text-jakala-purple tracking-tight">
                   JAKALA
                 </div>
-                <div className="ml-2 w-2 h-2 bg-jakala-green rounded-full"></div>
+                <div className="ml-2 w-2 h-2 bg-jakala-red rounded-full"></div>
               </div>
             </div>
 
@@ -38,7 +38,7 @@ const Index = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-jakala-gray-600 hover:text-jakala-navy px-3 py-2 text-sm font-medium transition-colors duration-200"
+                    className="text-jakala-gray-600 hover:text-jakala-purple px-3 py-2 text-sm font-medium transition-colors duration-200"
                   >
                     {item.name}
                   </a>
@@ -48,7 +48,7 @@ const Index = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <button className="bg-jakala-green hover:bg-jakala-green-light text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200">
+              <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200">
                 Get Started
               </button>
             </div>
@@ -57,7 +57,7 @@ const Index = () => {
             <div className="lg:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-jakala-gray-600 hover:text-jakala-navy p-2"
+                className="text-jakala-gray-600 hover:text-jakala-purple p-2"
               >
                 {isMenuOpen ? (
                   <X className="w-6 h-6" />
@@ -72,18 +72,18 @@ const Index = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-jakala-gray-100">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-jakala-gray-200">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-jakala-gray-600 hover:text-jakala-navy block px-3 py-2 text-base font-medium"
+                  className="text-jakala-gray-600 hover:text-jakala-purple block px-3 py-2 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <button className="w-full text-left bg-jakala-green hover:bg-jakala-green-light text-white px-3 py-2 rounded-lg text-base font-medium transition-colors duration-200 mt-4">
+              <button className="w-full text-left bg-jakala-red hover:bg-jakala-red-dark text-white px-3 py-2 rounded-lg text-base font-medium transition-colors duration-200 mt-4">
                 Get Started
               </button>
             </div>
@@ -95,15 +95,15 @@ const Index = () => {
       <section className="section-padding bg-gradient-to-br from-jakala-white via-jakala-gray-50 to-jakala-white">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-jakala-navy leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-jakala-purple leading-tight mb-6">
               Data-driven AI and
-              <span className="text-jakala-green"> experiences</span>
+              <span className="text-jakala-red"> experiences</span>
               <span style={{ marginRight: "43px" }}>
                 {" "}
                 that transform business
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-jakala-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-jakala-text-dark leading-relaxed mb-8 max-w-3xl mx-auto">
               We help global companies unlock the power of data and artificial
               intelligence to create exceptional customer experiences and drive
               sustainable growth.
@@ -131,7 +131,7 @@ const Index = () => {
             </div>
 
             <div className="text-center">
-              <button className="bg-jakala-navy hover:bg-jakala-gray-800 text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200 inline-flex items-center">
+              <button className="bg-jakala-purple hover:bg-jakala-purple-dark text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200 inline-flex items-center">
                 View All Posts
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
@@ -141,21 +141,21 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-jakala-navy">
+      <section className="section-padding bg-jakala-purple">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Ready to transform your business?
             </h2>
-            <p className="text-xl text-jakala-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-jakala-gray-200 mb-8 max-w-2xl mx-auto">
               Let's discuss how our data-driven solutions and AI expertise can
               help you achieve your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-jakala-green hover:bg-jakala-green-light text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200">
+              <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200">
                 Start a Project
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-jakala-navy px-8 py-4 rounded-lg text-lg font-medium transition-all duration-200">
+              <button className="border-2 border-white text-white hover:bg-white hover:text-jakala-purple px-8 py-4 rounded-lg text-lg font-medium transition-all duration-200">
                 Schedule a Call
               </button>
             </div>
@@ -164,14 +164,14 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-jakala-gray-900 text-white py-12">
+      <footer className="bg-jakala-dark text-white py-12">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center mb-4">
                 <div className="text-2xl font-bold tracking-tight">JAKALA</div>
-                <div className="ml-2 w-2 h-2 bg-jakala-green rounded-full"></div>
+                <div className="ml-2 w-2 h-2 bg-jakala-red rounded-full"></div>
               </div>
               <p className="text-jakala-gray-400 mb-4 max-w-md">
                 A modern, data-driven, AI and experiences company helping
