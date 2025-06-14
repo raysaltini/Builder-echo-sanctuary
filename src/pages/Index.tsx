@@ -96,12 +96,30 @@ const Index = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-jakala-purple leading-tight mb-6">
-              Trusted advisors in data, AI, and{" "}
-              <span style={{ color: "rgb(208, 2, 27)" }}>experiences</span>{" "}
-              creating meaningful and lasting impact.
+              <span
+                style={{
+                  marginRight: "132px",
+                  paddingRight: "160px",
+                }}
+              >
+                <div style={{ textAlign: "start" }}></div>
+                <div style={{ textAlign: "start" }}>
+                  Trusted data, AI, and experiences advisors creating meaningful
+                  lasting impact.
+                </div>
+              </span>
+              <span
+                style={{
+                  display: "inline",
+                  color: "rgb(208, 2, 27)",
+                  fontWeight: "700",
+                }}
+              >
+                <div></div>
+              </span>
             </h1>
             <p className="text-lg sm:text-xl text-jakala-text-dark leading-relaxed mb-8 max-w-3xl mx-auto">
-              We help global companies unlock the power of data and artificial
+              We help organizations unlock the power of data and artificial
               intelligence to create exceptional customer experiences and drive
               sustainable growth.
             </p>
