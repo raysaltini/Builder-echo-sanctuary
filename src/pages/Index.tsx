@@ -112,29 +112,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 bg-jakala-navy">
-        <div className="container">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { number: "500+", label: "Global Clients" },
-              { number: "25", label: "Countries" },
-              { number: "2000+", label: "Experts" },
-              { number: "15+", label: "Years Experience" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-jakala-green mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-jakala-gray-300 text-sm lg:text-base">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Blog Articles Section */}
       <section id="insights" className="section-padding">
         <div className="container">
