@@ -1,41 +1,252 @@
+import { useState } from "react";
+import { BlogCard } from "@/components/BlogCard";
+import { getBlogPosts } from "@/lib/blog-data";
+import { ArrowRight, Menu, X } from "lucide-react";
+
 const Index = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const blogPosts = getBlogPosts(6);
+
+  const navItems = [
+    { name: "Services", href: "#services" },
+    { name: "Insights", href: "#insights" },
+    { name: "About", href: "#about" },
+    { name: "Careers", href: "#careers" },
+    { name: "Contact", href: "#contact" },
+  ];
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-            />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-      </div>
+    <div className="min-h-screen bg-jakala-white">
+      {/* Navigation */}
+      <nav className="relative bg-jakala-white border-b border-jakala-gray-100">
+        <div className="container">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <div className="flex items-center">
+                <div className="text-2xl font-bold text-jakala-navy tracking-tight">
+                  JAKALA
+                </div>
+                <div className="ml-2 w-2 h-2 bg-jakala-green rounded-full"></div>
+              </div>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:block">
+              <div className="ml-10 flex items-baseline space-x-8">
+                {navItems.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-jakala-gray-600 hover:text-jakala-navy px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="hidden lg:block">
+              <button className="bg-jakala-green hover:bg-jakala-green-light text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200">
+                Get Started
+              </button>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="lg:hidden">
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-jakala-gray-600 hover:text-jakala-navy p-2"
+              >
+                {isMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="lg:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-jakala-gray-100">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-jakala-gray-600 hover:text-jakala-navy block px-3 py-2 text-base font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ))}
+              <button className="w-full text-left bg-jakala-green hover:bg-jakala-green-light text-white px-3 py-2 rounded-lg text-base font-medium transition-colors duration-200 mt-4">
+                Get Started
+              </button>
+            </div>
+          </div>
+        )}
+      </nav>
+
+      {/* Hero Section */}
+      <section className="section-padding bg-gradient-to-br from-jakala-white via-jakala-gray-50 to-jakala-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-jakala-navy leading-tight mb-6">
+              Data-driven AI and
+              <span className="text-jakala-green"> experiences</span> that
+              transform business
+            </h1>
+            <p className="text-lg sm:text-xl text-jakala-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
+              We help global companies unlock the power of data and artificial
+              intelligence to create exceptional customer experiences and drive
+              sustainable growth.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-jakala-green hover:bg-jakala-green-light text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center">
+                Explore Our Services
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </button>
+              <button className="border-2 border-jakala-navy text-jakala-navy hover:bg-jakala-navy hover:text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-200">
+                Watch Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-12 bg-jakala-navy">
+        <div className="container">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { number: "500+", label: "Global Clients" },
+              { number: "25", label: "Countries" },
+              { number: "2000+", label: "Experts" },
+              { number: "15+", label: "Years Experience" },
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-3xl lg:text-4xl font-bold text-jakala-green mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-jakala-gray-300 text-sm lg:text-base">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Articles Section */}
+      <section id="insights" className="section-padding">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-jakala-navy mb-4">
+              Latest Insights
+            </h2>
+            <p className="text-lg text-jakala-gray-600 max-w-2xl mx-auto">
+              Stay ahead with our expert perspectives on AI, data analytics,
+              digital transformation, and emerging technologies.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {blogPosts.map((post, index) => (
+              <div
+                key={post.id}
+                className="animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <BlogCard post={post} />
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <button className="bg-jakala-navy hover:bg-jakala-gray-800 text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200 inline-flex items-center">
+              View All Posts
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding bg-jakala-navy">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Ready to transform your business?
+            </h2>
+            <p className="text-xl text-jakala-gray-300 mb-8 max-w-2xl mx-auto">
+              Let's discuss how our data-driven solutions and AI expertise can
+              help you achieve your goals.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-jakala-green hover:bg-jakala-green-light text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200">
+                Start a Project
+              </button>
+              <button className="border-2 border-white text-white hover:bg-white hover:text-jakala-navy px-8 py-4 rounded-lg text-lg font-medium transition-all duration-200">
+                Schedule a Call
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-jakala-gray-900 text-white py-12">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Company Info */}
+            <div className="col-span-1 md:col-span-2">
+              <div className="flex items-center mb-4">
+                <div className="text-2xl font-bold tracking-tight">JAKALA</div>
+                <div className="ml-2 w-2 h-2 bg-jakala-green rounded-full"></div>
+              </div>
+              <p className="text-jakala-gray-400 mb-4 max-w-md">
+                A modern, data-driven, AI and experiences company helping
+                businesses transform through technology and innovation.
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                {navItems.map((item) => (
+                  <li key={item.name}>
+                    <a
+                      href={item.href}
+                      className="text-jakala-gray-400 hover:text-white transition-colors duration-200"
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h3 className="font-semibold mb-4">Contact</h3>
+              <ul className="space-y-2 text-jakala-gray-400">
+                <li>hello@jakala.com</li>
+                <li>+1 (555) 123-4567</li>
+                <li>Global Offices</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-jakala-gray-800 mt-12 pt-8 text-center text-jakala-gray-400">
+            <p>&copy; 2024 JAKALA. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
