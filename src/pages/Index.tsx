@@ -169,9 +169,13 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center mb-4">
-                <div className="text-2xl font-bold tracking-tight">JAKALA</div>
-                <div className="ml-2 w-2 h-2 bg-jakala-red rounded-full"></div>
+              <div className="mb-4">
+                <JakalaLogo
+                  variant="white"
+                  className="text-white"
+                  width={120}
+                  height={32}
+                />
               </div>
               <p className="text-jakala-gray-400 mb-4 max-w-md">
                 A modern, data-driven, AI and experiences company helping
