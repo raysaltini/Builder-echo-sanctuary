@@ -133,13 +133,14 @@ const Index = () => {
         </section>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - THIS IS WHERE YOUR SELECTED TEXT IS LOCATED */}
       <section className="section-padding bg-jakala-purple">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               engage | evolve | elevate
             </h2>
+            {/* 👇 THIS IS THE PARAGRAPH YOU SELECTED - LINE 143 👇 */}
             <p className="text-xl text-jakala-gray-200 mb-8 max-w-2xl mx-auto">
               Ready to transform your business? Let's explore how our innovative solutions can drive your success forward.
             </p>
