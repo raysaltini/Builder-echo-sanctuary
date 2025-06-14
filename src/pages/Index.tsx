@@ -138,7 +138,7 @@ const Index = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Ready to transform your business?
+              engage | evolve | elevate
             </h2>
             <p className="text-xl text-jakala-gray-200 mb-8 max-w-2xl mx-auto">
               Let's discuss how our data-driven solutions and AI expertise can
