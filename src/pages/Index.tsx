@@ -95,28 +95,11 @@ const Index = () => {
       <section className="section-padding bg-gradient-to-br from-jakala-white via-jakala-gray-50 to-jakala-white">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-jakala-purple leading-tight mb-6">
-              <span
-                style={{
-                  marginRight: "132px",
-                  paddingRight: "160px",
-                }}
-              >
-                <div style={{ textAlign: "start" }}></div>
-                <div style={{ textAlign: "start" }}>
-                  Trusted data, AI, and experiences advisors creating meaningful
-                  lasting impact.
-                </div>
-              </span>
-              <span
-                style={{
-                  display: "inline",
-                  color: "rgb(208, 2, 27)",
-                  fontWeight: "700",
-                }}
-              >
-                <div></div>
-              </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-jakala-purple leading-tight mb-3">
+              Trusted <span className="text-jakala-red">data</span>,{" "}
+              <span className="text-jakala-red">AI</span>, and{" "}
+              <span className="text-jakala-red">experiences</span> advisors
+              creating meaningful lasting impact.
             </h1>
             <p className="text-lg sm:text-xl text-jakala-text-dark leading-relaxed mb-8 max-w-3xl mx-auto">
               We help organizations unlock the power of data and artificial
