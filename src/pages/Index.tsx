@@ -8,13 +8,7 @@ const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const blogPosts = getBlogPosts(6);
 
-  const navItems = [
-    { name: "Services", href: "#services" },
-    { name: "Insights", href: "#insights" },
-    { name: "About", href: "#about" },
-    { name: "Careers", href: "#careers" },
-    { name: "Contact", href: "#contact" },
-  ];
+  const navItems = [{ name: "Services", href: "#services" }];
 
   return (
     <div className="min-h-screen bg-jakala-white">
@@ -49,7 +43,7 @@ const Index = () => {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200">
-                Get Started
+                Ping Us
               </button>
             </div>
 
@@ -84,7 +78,7 @@ const Index = () => {
                 </a>
               ))}
               <button className="w-full text-left bg-jakala-red hover:bg-jakala-red-dark text-white px-3 py-2 rounded-lg text-base font-medium transition-colors duration-200 mt-4">
-                Get Started
+                Ping Us
               </button>
             </div>
           </div>
