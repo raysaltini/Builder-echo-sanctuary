@@ -83,7 +83,7 @@
   }
 
   body {
-    @apply bg-jakala-white text-jakala-navy font-sans antialiased;
+    @apply bg-jakala-white text-jakala-purple font-sans antialiased;
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
