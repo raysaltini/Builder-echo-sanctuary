@@ -95,7 +95,7 @@ const Index = () => {
       <section className="section-padding bg-gradient-to-br from-jakala-white via-jakala-gray-50 to-jakala-white">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-jakala-purple leading-tight mb-3">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-jakala-purple leading-tight mb-3">
               Trusted advisors in <span className="text-jakala-red">data</span>,{" "}
               <span className="text-jakala-red">AI</span>, and{" "}
               <span className="text-jakala-red">experiences</span> creating
