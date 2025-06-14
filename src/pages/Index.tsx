@@ -97,8 +97,11 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-jakala-navy leading-tight mb-6">
               Data-driven AI and
-              <span className="text-jakala-green"> experiences</span> that
-              transform business
+              <span className="text-jakala-green"> experiences</span>
+              <span style={{ marginRight: "43px" }}>
+                {" "}
+                that transform business
+              </span>
             </h1>
             <p className="text-lg sm:text-xl text-jakala-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
               We help global companies unlock the power of data and artificial
