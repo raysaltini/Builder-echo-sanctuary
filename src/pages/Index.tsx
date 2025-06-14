@@ -98,13 +98,9 @@ const Index = () => {
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-jakala-purple leading-tight mb-3">
               Trusted advisors in <span className="text-jakala-red">data</span>,{" "}
               <span className="text-jakala-red">AI</span>, and{" "}
-              <span className="text-jakala-red">experiences</span> creating
-              meaningful lasting impact.
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-jakala-purple leading-tight mb-3">
+              Trusted advisors in <span className="text-jakala-red">data</span>, <span className="text-jakala-red">AI</span>, and <span className="text-jakala-red">experiences</span> creating meaningful lasting impact.
             </h1>
-            <p className="text-lg sm:text-xl text-jakala-text-dark leading-relaxed mb-8 max-w-3xl mx-auto">
-              We help organizations create exceptional customer experiences and
-              drive sustainable growth.
-            </p>
           </div>
         </div>
 
