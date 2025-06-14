@@ -113,7 +113,7 @@ const Index = () => {
       </section>
 
       {/* Blog Articles Section */}
-      <section id="insights" className="section-padding">
+      <section id="insights" style={{ padding: "9px 0 80px" }}>
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-jakala-navy mb-4">
