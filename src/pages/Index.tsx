@@ -141,7 +141,7 @@ const Index = () => {
               engage | evolve | elevate
             </h2>
             <p className="text-xl text-jakala-gray-200 mb-8 max-w-2xl mx-auto">
-              Let's discuss how our solutions can help you achieve your goals.
+              Ready to transform your business? Let's explore how our innovative solutions can drive your success forward.
             </p>
             {/* Alternative 1: Smaller, more compact buttons */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
