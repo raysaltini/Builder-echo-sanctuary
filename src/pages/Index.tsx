@@ -8,7 +8,12 @@ const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const blogPosts = getBlogPosts(6);
 
-  const navItems = [{ name: "Services", href: "#services" }];
+  const navItems = [
+    { name: "Services", href: "#services" },
+    { name: "Industries", href: "#industries" },
+    { name: "Insights", href: "#insights" },
+    { name: "People", href: "#people" },
+  ];
 
   return (
     <div className="min-h-screen bg-jakala-white">
