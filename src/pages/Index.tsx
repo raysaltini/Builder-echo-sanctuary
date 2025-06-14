@@ -9,10 +9,11 @@ const Index = () => {
   const blogPosts = getBlogPosts(6);
 
   const navItems = [
-    { name: "Services", href: "#services" },
-    { name: "Industries", href: "#industries" },
     { name: "Insights", href: "#insights" },
+    { name: "Industries", href: "#industries" },
+    { name: "Services", href: "#services" },
     { name: "People", href: "#people" },
+    { name: "About", href: "#about" },
   ];
 
   return (
@@ -48,7 +49,7 @@ const Index = () => {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200">
-                Ping Us
+                Jakala.com
               </button>
             </div>
 
@@ -83,7 +84,7 @@ const Index = () => {
                 </a>
               ))}
               <button className="w-full text-left bg-jakala-red hover:bg-jakala-red-dark text-white px-3 py-2 rounded-lg text-base font-medium transition-colors duration-200 mt-4">
-                Ping Us
+                Jakala.com
               </button>
             </div>
           </div>
