@@ -142,7 +142,7 @@ const Index = () => {
             </h2>
             {/* 👇 THIS IS THE PARAGRAPH YOU SELECTED - LINE 143 👇 */}
             <p className="text-xl text-jakala-gray-200 mb-8 max-w-2xl mx-auto">
-              Ready to transform your business? Let's explore how our innovative solutions can drive your success forward.
+              Let's discuss how our solutions can help achieve your goals.
             </p>
             {/* Alternative 1: Smaller, more compact buttons */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
