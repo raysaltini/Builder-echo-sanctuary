@@ -19,17 +19,19 @@ export default {
     },
     extend: {
       colors: {
-        // JAKALA Brand Colors
+        // JAKALA Brand Colors - matching jakala.com
         jakala: {
           white: "#FFFFFF",
-          navy: "#0A1628",
-          dark: "#1A1A1A",
-          green: "#00D4AA",
-          "green-light": "#4DDFBD",
+          purple: "#040066", // Primary brand color - deep purple/navy
+          "purple-dark": "#030055", // Darker variant for hover states
+          red: "#F00A0A", // Accent red for CTAs
+          "red-dark": "#D00808", // Darker red for hover states
+          dark: "#2E2E2E", // Dark gray for sections
+          "text-dark": "#111827", // Text gray for body content
           gray: {
             50: "#F9FAFB",
             100: "#F3F4F6",
-            200: "#E5E7EB",
+            200: "#E8E8E8", // Light gray from Jakala
             300: "#D1D5DB",
             400: "#9CA3AF",
             500: "#6B7280",
