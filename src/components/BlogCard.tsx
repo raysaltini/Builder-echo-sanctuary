@@ -32,17 +32,17 @@ export const BlogCard = ({ post, className = "" }: BlogCardProps) => {
       <div className="p-6">
         {post.category && (
           <div className="mb-3">
-            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-jakala-green/10 text-jakala-green border border-jakala-green/20">
+            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-jakala-red/10 text-jakala-red border border-jakala-red/20">
               {post.category}
             </span>
           </div>
         )}
 
-        <h3 className="font-semibold text-xl text-jakala-navy leading-tight mb-3 group-hover:text-jakala-green transition-colors duration-200">
+        <h3 className="font-semibold text-xl text-jakala-purple leading-tight mb-3 group-hover:text-jakala-red transition-colors duration-200">
           {post.title}
         </h3>
 
-        <p className="text-jakala-gray-600 text-sm leading-relaxed mb-4 line-clamp-2">
+        <p className="text-jakala-text-dark text-sm leading-relaxed mb-4 line-clamp-2">
           {post.summary}
         </p>
 
@@ -61,7 +61,7 @@ export const BlogCard = ({ post, className = "" }: BlogCardProps) => {
 
         <a
           href={post.link}
-          className="inline-flex items-center text-sm font-medium text-jakala-green hover:text-jakala-navy transition-colors duration-200 group"
+          className="inline-flex items-center text-sm font-medium text-jakala-red hover:text-jakala-purple transition-colors duration-200 group"
         >
           Read more
           <ArrowRight className="ml-1 w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
