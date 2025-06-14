@@ -102,9 +102,8 @@ const Index = () => {
               meaningful lasting impact.
             </h1>
             <p className="text-lg sm:text-xl text-jakala-text-dark leading-relaxed mb-8 max-w-3xl mx-auto">
-              We help organizations unlock the power of data and artificial
-              intelligence to create exceptional customer experiences and drive
-              sustainable growth.
+              We help organizations create exceptional customer experiences and
+              drive sustainable growth.
             </p>
           </div>
         </div>
