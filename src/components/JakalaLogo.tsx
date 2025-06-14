@@ -7,8 +7,8 @@ interface JakalaLogoProps {
 
 export const JakalaLogo = ({
   className = "",
-  width = 140,
-  height = 36,
+  width = 120,
+  height = 32,
   variant = "default",
 }: JakalaLogoProps) => {
   const logoColor = variant === "white" ? "#FFFFFF" : "#040066";
@@ -17,48 +17,59 @@ export const JakalaLogo = ({
     <svg
       width={width}
       height={height}
-      viewBox="0 0 140 36"
+      viewBox="0 0 120 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* J */}
-      <path
-        d="M8 8v12c0 2.5-1.5 4-4 4s-4-1.5-4-4h3c0 1 0.5 1.5 1 1.5s1-0.5 1-1.5V8h3z"
-        fill={logoColor}
-      />
+      {/* Optimized JAKALA text with modern geometric styling */}
+      <g>
+        {/* J */}
+        <path
+          d="M4 4v11.5c0 2.5-1.5 4.5-4 4.5v-2c1 0 2-1 2-2.5V4h2z"
+          fill={logoColor}
+        />
 
-      {/* A */}
-      <path
-        d="M18 8h-3l-4 16h3l0.8-3.2h4.4l0.8 3.2h3L18 8zm-2.6 9.6L16.8 12l1.4 5.6h-2.8z"
-        fill={logoColor}
-      />
+        {/* A */}
+        <path
+          d="M16 4h-2l-3 16h2l0.6-3h3.8l0.6 3h2L16 4zm-2.2 11L15 9.5l1.2 5.5h-2.4z"
+          fill={logoColor}
+        />
 
-      {/* K */}
-      <path
-        d="M28 8v16h3v-6l3 6h3.5l-3.5-6.5L37.5 8H34l-3 5.5V8h-3z"
-        fill={logoColor}
-      />
+        {/* K */}
+        <path
+          d="M26 4v16h2v-7l3.5 7h2.5l-3.5-7.5L33.5 4H31l-3 6V4h-2z"
+          fill={logoColor}
+        />
 
-      {/* A */}
-      <path
-        d="M48 8h-3l-4 16h3l0.8-3.2h4.4l0.8 3.2h3L48 8zm-2.6 9.6L46.8 12l1.4 5.6h-2.8z"
-        fill={logoColor}
-      />
+        {/* A */}
+        <path
+          d="M44 4h-2l-3 16h2l0.6-3h3.8l0.6 3h2L44 4zm-2.2 11L43 9.5l1.2 5.5h-2.4z"
+          fill={logoColor}
+        />
 
-      {/* L */}
-      <path d="M56 8v16h8v-3h-5V8h-3z" fill={logoColor} />
+        {/* L */}
+        <path d="M52 4v16h6v-2h-4V4h-2z" fill={logoColor} />
 
-      {/* A */}
-      <path
-        d="M74 8h-3l-4 16h3l0.8-3.2h4.4l0.8 3.2h3L74 8zm-2.6 9.6L72.8 12l1.4 5.6h-2.8z"
-        fill={logoColor}
-      />
+        {/* A */}
+        <path
+          d="M68 4h-2l-3 16h2l0.6-3h3.8l0.6 3h2L68 4zm-2.2 11L67 9.5l1.2 5.5h-2.4z"
+          fill={logoColor}
+        />
+      </g>
 
-      {/* Geometric red accent element */}
-      <g transform="translate(124, 12)">
-        <circle cx="6" cy="6" r="6" fill="#F00A0A" />
-        <polygon points="3,3 9,3 6,9" fill="#FFFFFF" opacity="0.3" />
+      {/* Modern hexagonal accent - signature Jakala element */}
+      <g transform="translate(100, 10)">
+        <polygon
+          points="6,2 11,5 11,11 6,14 1,11 1,5"
+          fill="#F00A0A"
+          stroke="none"
+        />
+        <polygon
+          points="6,4 9,6 9,10 6,12 3,10 3,6"
+          fill="#FFFFFF"
+          opacity="0.2"
+        />
       </g>
     </svg>
   );
