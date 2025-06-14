@@ -110,40 +110,34 @@ const Index = () => {
             </p>
           </div>
         </div>
-      </section>
 
-      {/* Blog Articles Section */}
-      <section id="insights" style={{ padding: "9px 0 80px" }}>
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-jakala-navy mb-4">
-              Latest Insights
-            </h2>
-            <p className="text-lg text-jakala-gray-600 max-w-2xl mx-auto">
-              Stay ahead with our expert perspectives on AI, data analytics,
-              digital transformation, and emerging technologies.
-            </p>
-          </div>
+        <section
+          id="insights"
+          style={{ paddingBottom: "80px", marginTop: "37px" }}
+        >
+          <div className="container">
+            <div className="text-center mb-12"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {blogPosts.map((post, index) => (
-              <div
-                key={post.id}
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <BlogCard post={post} />
-              </div>
-            ))}
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              {blogPosts.map((post, index) => (
+                <div
+                  key={post.id}
+                  className="animate-fade-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <BlogCard post={post} />
+                </div>
+              ))}
+            </div>
 
-          <div className="text-center">
-            <button className="bg-jakala-navy hover:bg-jakala-gray-800 text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200 inline-flex items-center">
-              View All Posts
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </button>
+            <div className="text-center">
+              <button className="bg-jakala-navy hover:bg-jakala-gray-800 text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200 inline-flex items-center">
+                View All Posts
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </button>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
 
       {/* CTA Section */}
