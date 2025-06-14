@@ -24,12 +24,11 @@ const Index = () => {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <div className="flex items-center">
-                <div className="text-2xl font-bold text-jakala-purple tracking-tight">
-                  JAKALA
-                </div>
-                <div className="ml-2 w-2 h-2 bg-jakala-red rounded-full"></div>
-              </div>
+              <JakalaLogo
+                className="text-jakala-purple"
+                width={120}
+                height={32}
+              />
             </div>
 
             {/* Desktop Navigation */}
