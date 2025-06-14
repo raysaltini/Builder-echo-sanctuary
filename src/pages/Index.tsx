@@ -26,8 +26,8 @@ const Index = () => {
             <div className="flex-shrink-0">
               <JakalaLogo
                 className="text-jakala-purple"
-                width={150}
-                height={40}
+                width={300}
+                height={80}
               />
             </div>
 
@@ -173,8 +173,8 @@ const Index = () => {
                 <JakalaLogo
                   variant="white"
                   className="text-white"
-                  width={150}
-                  height={40}
+                  width={300}
+                  height={80}
                 />
               </div>
               <p className="text-jakala-gray-400 mb-4 max-w-md">
