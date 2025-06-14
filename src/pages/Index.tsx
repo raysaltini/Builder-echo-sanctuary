@@ -96,10 +96,10 @@ const Index = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-jakala-purple leading-tight mb-3">
-              Trusted <span className="text-jakala-red">data</span>,{" "}
+              Trusted advisors in <span className="text-jakala-red">data</span>,{" "}
               <span className="text-jakala-red">AI</span>, and{" "}
-              <span className="text-jakala-red">experiences</span> advisors
-              creating meaningful lasting impact.
+              <span className="text-jakala-red">experiences</span> creating
+              meaningful lasting impact.
             </h1>
             <p className="text-lg sm:text-xl text-jakala-text-dark leading-relaxed mb-8 max-w-3xl mx-auto">
               We help organizations unlock the power of data and artificial
