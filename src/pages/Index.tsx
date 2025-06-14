@@ -143,11 +143,55 @@ const Index = () => {
             <p className="text-xl text-jakala-gray-200 mb-8 max-w-2xl mx-auto">
               Let's discuss how our solutions can help you achieve your goals.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200">
+            {/* Alternative 1: Smaller, more compact buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-6 py-3 rounded-md text-base font-medium transition-colors duration-200">
                 Send a Question
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-jakala-purple px-8 py-4 rounded-lg text-lg font-medium transition-all duration-200">
+              <button className="border-2 border-white text-white hover:bg-white hover:text-jakala-purple px-6 py-3 rounded-md text-base font-medium transition-all duration-200">
+                Schedule a Call
+              </button>
+            </div>
+
+            {/* Alternative 2: Primary button emphasis with different sizes */}
+            <div className="hidden flex-col sm:flex-row gap-4 justify-center items-center">
+              <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-10 py-4 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg">
+                Send a Question
+              </button>
+              <button className="border border-white text-white hover:bg-white hover:text-jakala-purple px-6 py-2.5 rounded-lg text-sm font-medium transition-all duration-200">
+                Schedule a Call
+              </button>
+            </div>
+
+            {/* Alternative 3: Stacked with full-width on mobile, side-by-side on desktop */}
+            <div className="hidden flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+              <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-8 py-3.5 rounded-lg text-base font-medium transition-colors duration-200 flex-1">
+                Send a Question
+              </button>
+              <button className="border-2 border-white text-white hover:bg-white hover:text-jakala-purple px-8 py-3.5 rounded-lg text-base font-medium transition-all duration-200 flex-1">
+                Schedule a Call
+              </button>
+            </div>
+
+            {/* Alternative 4: Single primary button with secondary link */}
+            <div className="hidden flex-col items-center gap-4">
+              <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-12 py-4 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg">
+                Send a Question
+              </button>
+              <a
+                href="#"
+                className="text-white hover:text-jakala-gray-200 text-base underline underline-offset-4 transition-colors duration-200"
+              >
+                or schedule a call
+              </a>
+            </div>
+
+            {/* Alternative 5: Inline buttons with minimal spacing */}
+            <div className="hidden flex flex-row gap-2 justify-center">
+              <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-6 py-2.5 rounded text-sm font-medium transition-colors duration-200">
+                Send a Question
+              </button>
+              <button className="border border-white text-white hover:bg-white hover:text-jakala-purple px-6 py-2.5 rounded text-sm font-medium transition-all duration-200">
                 Schedule a Call
               </button>
             </div>
