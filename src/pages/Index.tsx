@@ -141,8 +141,7 @@ const Index = () => {
               engage | evolve | elevate
             </h2>
             <p className="text-xl text-jakala-gray-200 mb-8 max-w-2xl mx-auto">
-              Let's discuss how our data-driven solutions and AI expertise can
-              help you achieve your goals.
+              Let's discuss how our solutions can help you achieve your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-200">
