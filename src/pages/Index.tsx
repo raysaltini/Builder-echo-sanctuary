@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BlogCard } from "@/components/BlogCard";
+import { JakalaLogo } from "@/components/JakalaLogo";
 import { getBlogPosts } from "@/lib/blog-data";
 import { ArrowRight, Menu, X } from "lucide-react";
 
