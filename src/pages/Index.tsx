@@ -95,7 +95,7 @@ const Index = () => {
       <section className="section-padding bg-gradient-to-br from-jakala-white via-jakala-gray-50 to-jakala-white">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-jakala-purple leading-tight mb-3">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-jakala-purple leading-tight mb-8">
               Trusted advisors in <span className="text-jakala-red">data</span>,{" "}
               <span className="text-jakala-red">AI</span>, and{" "}
               <span className="text-jakala-red">experiences</span> helping you
@@ -103,15 +103,18 @@ const Index = () => {
             </h1>
             
             {/* Ask us anything section */}
-            <div className="mt-8 mb-12">
-              <h2 className="text-xl sm:text-2xl font-semibold text-jakala-purple mb-6">
+            <div className="bg-white rounded-2xl shadow-lg border border-jakala-gray-200 p-8 mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-jakala-purple mb-2">
                 Ask us anything
               </h2>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-                <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-8 py-3 rounded-lg text-base font-medium transition-colors duration-200 flex-1">
+              <p className="text-jakala-gray-600 mb-8 text-lg">
+                Ready to transform your business? Let's start the conversation.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
+                <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-8 py-4 rounded-lg text-base font-semibold transition-colors duration-200 flex-1 shadow-md hover:shadow-lg">
                   Send a Question
                 </button>
-                <button className="border-2 border-jakala-purple text-jakala-purple hover:bg-jakala-purple hover:text-white px-8 py-3 rounded-lg text-base font-medium transition-all duration-200 flex-1">
+                <button className="border-2 border-jakala-purple text-jakala-purple hover:bg-jakala-purple hover:text-white px-8 py-4 rounded-lg text-base font-semibold transition-all duration-200 flex-1 shadow-md hover:shadow-lg">
                   Schedule a Call
                 </button>
               </div>
