@@ -101,6 +101,21 @@ const Index = () => {
               <span className="text-jakala-red">experiences</span> helping you
               create meaningful lasting impact.
             </h1>
+            
+            {/* Ask us anything section */}
+            <div className="mt-8 mb-12">
+              <h2 className="text-xl sm:text-2xl font-semibold text-jakala-purple mb-6">
+                Ask us anything
+              </h2>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                <button className="bg-jakala-red hover:bg-jakala-red-dark text-white px-8 py-3 rounded-lg text-base font-medium transition-colors duration-200 flex-1">
+                  Send a Question
+                </button>
+                <button className="border-2 border-jakala-purple text-jakala-purple hover:bg-jakala-purple hover:text-white px-8 py-3 rounded-lg text-base font-medium transition-all duration-200 flex-1">
+                  Schedule a Call
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
